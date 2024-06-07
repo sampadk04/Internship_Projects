@@ -1,0 +1,11 @@
+config_num: 2
+frames: 45
+steps: 1
+test_size: 0.25
+remove_from_target1: ['doubt', 'remove']
+remove_from_target2: ['doubt', 'remove', 'yoga/strectching', 'idle_lyingdown',
+                      'idle_sitting']
+remove_from_target_list:
+  - []
+  - remove_from_target1
+  - remove_from_target2

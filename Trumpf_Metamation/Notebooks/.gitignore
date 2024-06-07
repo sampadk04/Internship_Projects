@@ -1,0 +1,12 @@
+# MacOS Files
+.DS_Store
+
+# Python Cache
+__pycache__/
+
+# ipynb checkpoints
+.ipynb_checkpoints/
+
+# VSCode Settings
+.vscode/
+.pytest_cache/

@@ -1,0 +1,35 @@
+image_matcher_index: 1
+
+img_path: data/smp_input/test.jpg
+
+smp_classifier_path: models/smp_classifier/model1_mps.pth
+
+device:
+  cpu: cpu
+  mps: mps
+  cuda: cuda
+
+class_names:
+- non_smp
+- smp
+
+bgrem_save_folder_path: data/smp_bgrem
+
+edge_detector_save_folder_path:
+  avg: data/smp_edge_detected/avg
+  fused: data/smp_edge_detected/fused
+
+edge_detector_folder_path: models/edge_detector/DexiNed
+
+extensions:
+- jpg
+- jpeg
+- png
+
+cad_lib_folder_path:
+  raw: data/cad_library/raw_library
+  transformed: data/cad_library/transformed_library
+
+threshold_padding: 175
+
+top_k: 3
