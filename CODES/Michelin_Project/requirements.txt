@@ -1,0 +1,13 @@
+playwright
+langchain
+langchain-community
+langchainhub
+chromadb
+langchain-google-genai
+elasticsearch
+beautifulsoup4
+tiktoken
+notebook
+ipykernel
+ipywidgets
+google-api-python-client

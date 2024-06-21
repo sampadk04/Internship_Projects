@@ -57,3 +57,48 @@ The reasons we choose ExtraTrees as our classifier are:
 * ExtraTrees takes lesser time to train.
 * We were able to get an accuracy of 97% with ExtraTrees.
 * Highest F1 score that means lower mis-classification rate.
+
+# Cohort: July-Sep 2022 (My Work)
+
+## Project Overview
+
+This project focuses on comparing fitness videos using Dynamic Time Warping (DTW) to assess the similarity between a trainee's performance and a trainer's demonstration. The goal is to develop a scoring system that quantifies how closely the trainee's movements match the expert's.
+
+## What is DTW?
+
+Dynamic Time Warping (DTW) is a technique used to measure the similarity between two sequences, which may vary in time or speed. It calculates the optimal match between two sequences by allowing for stretching and compressing of the time axis. This makes DTW particularly useful for comparing time series data of different lengths.
+
+## Methodology
+
+### How DTW Works
+
+DTW compares the similarity by calculating the distance between two arrays or time series of different lengths. Instead of a one-to-one mapping, DTW employs a many-to-one or one-to-many strategy to minimize the total distance between the two series.
+
+For example, if two sequences follow the same pattern but are of different lengths, DTW can align them by stretching or compressing certain parts of the sequences to achieve the best match.
+
+### Application in Our Project
+
+The project aims to compare two videos – one of a trainer and one of a trainee – to determine how similar the trainee's movements are to the trainer's. By treating the videos as collections of frames over time, they can be analyzed as time-series data, making DTW a natural choice for this comparison.
+
+## Data
+
+We used three different videos for preliminary comparisons:
+1. **Trainer Video**: A video of the trainer performing bicep curls.
+2. **Trainee Video with Correct Form**: A video of a trainee performing bicep curls with the correct form.
+3. **Trainee Video with Incorrect Form**: A video of a trainee performing bicep curls with incorrect form.
+
+These videos serve as a baseline to test the preliminary results of DTW.
+
+## Implementation
+
+The implementation involves the following steps:
+
+1. **Data Collection**: Gather videos of the trainer and trainee performing the same exercise.
+2. **Preprocessing**: Convert videos into a series of frames and extract relevant features.
+3. **DTW Algorithm**: Apply the DTW algorithm to compare the time series data from the trainer and trainee videos.
+4. **Scoring**: Calculate a score representing the similarity between the trainer's and trainee's performance.
+
+## Conclusion
+
+This project demonstrates the use of DTW for fitness activity recognition by comparing trainee performance to expert demonstrations. The approach can be extended to various exercises and used to provide real-time feedback in fitness applications.
+
